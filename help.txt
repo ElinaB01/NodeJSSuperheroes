@@ -1,0 +1,3 @@
+git bash here
+> npm init
+> npm install/i express

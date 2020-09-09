@@ -1,14 +1,30 @@
-//const express = require("express");
-//const app = express();
-const superheroes = require("superheroes");
-const supervillains = require("supervillains");
+let superheroes = require('superheroes');
+let supervillains = require('supervillains');
 
+//SUPERHEROES
 //console.log(superheroes.all);
 //console.log(superheroes.random());
-console.log(supervillains.random());
+//superheroes.all.forEach(hero => {
+//    console.log(hero);
+//});
 
-supervillains.all.forEach(supervillain => {
-    console.log("My super villain is", supervillain);
-});
+//SUPERVILLAINS
+//console.log(supervillains.all);
+//console.log(supervillains.random());
+//console.log("There are " + supervillains.all.length + " supervillains.");
+//superheroes.all.forEach(villain => {
+//    console.log(villain);
+//});
 
-console.log("There are " + supervillains.all.length + " supervillains.");
+//FIGHT
+let randHero = superheroes.random();
+let randVillain = supervillains.random();
+console.log(randHero + " fights " + randVillain + ".");
+
+const rnd = Math.round(Math.random(0, 2));
+
+if (rnd == 0) {
+    console.log(randHero + " wins!");
+} else if (rnd == 1) {
+    console.log(randVillain + " wins!");
+}

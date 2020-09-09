@@ -19,7 +19,7 @@ let supervillains = require('supervillains');
 //FIGHT
 let randHero = superheroes.random();
 let randVillain = supervillains.random();
-console.log(randHero + " fights " + randVillain + ".");
+console.log(`${randHero} fights ${randVillain}.`);
 
 const rnd = Math.round(Math.random(0, 2));
 
